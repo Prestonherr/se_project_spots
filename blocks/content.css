@@ -3,7 +3,7 @@
 }
 
 @media screen and (max-width: 627px) {
-  content {
+  .content {
     padding: 0 16px;
   }
 }

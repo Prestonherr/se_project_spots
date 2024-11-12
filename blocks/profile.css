@@ -114,6 +114,7 @@
     font-size: 20px;
     margin-bottom: 6px;
     max-width: 288px;
+    line-height: 20px;
   }
 
   .profile__column {
