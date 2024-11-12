@@ -14,6 +14,6 @@ This webpage is deployed to GITHub Pages.
 
 -[Deployment link](https://prestonherr.github.io/se_project_spots/)
 
-## Video Requirement Link
+## Video Requirement
 
-[~Video Requirement Link](https://drive.google.com/file/d/147fOeAUx7nAy16qq4XYZQO9rozlE8g7p/view?usp=sharing)
+-[Video Requirement Link](https://drive.google.com/file/d/147fOeAUx7nAy16qq4XYZQO9rozlE8g7p/view?usp=sharing)

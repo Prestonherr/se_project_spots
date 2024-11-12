@@ -42,12 +42,12 @@
 @media screen and (max-width: 627px) {
   .card__image {
     height: 288px;
-    width: 200px;
+    width: 288px;
   }
 
   .card__title {
     font-size: 16px;
     line-height: 16px;
-    max-width: 280px;
+    max-width: 200px;
   }
 }
