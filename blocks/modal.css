@@ -28,6 +28,17 @@
   border-width: 1px;
 }
 
+.modal__content_type_preview {
+  padding: 0;
+}
+
+.modal__image {
+  width: 100%;
+}
+
+.modal__close_type_preview {
+}
+
 .modal__close-button {
   position: absolute;
   top: 32px;

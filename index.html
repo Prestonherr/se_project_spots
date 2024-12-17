@@ -49,6 +49,7 @@
                 <div class="card__content">
                   <h2 class="card__title"></h2>
                   <button type="button" class="card__like-button"></button>
+                  <button type="button" class="card__delete-button"></button>
                 </div>
               </li>
             </template>
@@ -113,6 +114,17 @@
             <button type="submit" class="modal__submit-button">Save</button>
           </form>
         </div>
+      </div>
+    </div>
+    <div class="modal modal_opened" id="preview-modal">
+      <div class="modal__container modal__content_type_preview">
+        <button type="submit" class="modal__close-button"></button>
+        <img
+          src="https://practicum-content.s3.us-west-1.amazonaws.com/software-engineer/spots/7-photo-by-griffin-wooldridge-from-pexels.jpg"
+          alt=""
+          class="modal__image modal__close_type_preview"
+        />
+        <p class="modal__caption">Image Caption</p>
       </div>
     </div>
     <script defer src="./scripts/index.js"></script>
