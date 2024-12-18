@@ -1,4 +1,5 @@
 .modal {
+  font-family: Poppins, Arial, Helvetica, sans-serif;
   position: fixed;
   top: 0;
   bottom: 0;
@@ -11,10 +12,14 @@
   justify-content: center;
   visibility: hidden;
   padding: 0 20px;
+  opacity: 0;
+  transition: visibility 0s linear 0.5s, opacity 0.5s ease;
 }
 
 .modal_opened {
   visibility: visible;
+  opacity: 1;
+  transition-delay: 0s;
 }
 
 .modal__container {
@@ -30,13 +35,70 @@
 
 .modal__content_type_preview {
   padding: 0;
+  background-color: transparent;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.modal__image-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .modal__image {
-  width: 100%;
+  max-width: 80vw;
+  max-height: 80vh;
+  border-radius: 8px;
+  max-width: 100%;
+  display: table;
+  margin: auto;
+}
+
+.modal__caption {
+  font-weight: 500;
+  border-radius: 8px;
+  background-color: #212121;
+  padding: 4px 8px;
+  color: #fff;
+  line-height: 24px;
+  text-align: left;
+  font-size: 20px;
+  margin-top: 10px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  max-width: 100%;
 }
 
 .modal__close_type_preview {
+  background-image: url(../images/close-light.svg);
+  background-position: center;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-size: 35px 35px;
+  position: absolute;
+  opacity: 1;
+  height: 40px;
+  width: 40px;
+  border: none;
+  top: -5px;
+  right: 120px;
+  z-index: 10;
+}
+
+.modal__container.modal__content_type_preview {
+  position: relative;
+  display: inline-block;
+  padding: 0;
+}
+
+.modal__close_type_preview:hover {
+  cursor: pointer;
+  opacity: 0.4;
 }
 
 .modal__close-button {
@@ -47,9 +109,13 @@
   height: 40px;
   background-image: url(../images/Closeicon.svg);
   background-position: center;
+  background-repeat: no-repeat;
   background-color: #fff;
   border: none;
-  opacity: 40%;
+  opacity: 0.4;
+  padding: 0;
+  margin: 0;
+  background-size: 35px 35px;
 }
 
 .modal__close-button:hover {
