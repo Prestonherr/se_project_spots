@@ -38,17 +38,10 @@
   width: 100%;
 }
 
-.modal__content {
-  position: relative;
-  display: inline-block;
-}
-
 .modal__image {
   max-width: 80vw;
   max-height: 80vh;
   border-radius: 8px;
-  object-fit: cover;
-  overflow: hidden;
   margin: 0 auto;
   display: flex;
   width: 100%;
@@ -88,7 +81,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
 }
 
 .modal__close_type_preview:hover {
@@ -115,7 +107,7 @@
 .modal__close-button_preview {
   background-image: url(../images/close-light.svg);
   background-color: transparent;
-  background-size: 35px 35px;
+  background-size: 40px 40px;
   position: absolute;
   opacity: 1;
   height: 40px;
@@ -206,16 +198,22 @@
   }
 
   .modal__image {
-    height: 100%;
-    width: 288px;
+    max-height: 90vh;
+    max-width: 90vw;
   }
 
   .modal__close-button_preview {
     left: calc(100% + -42px);
+    top: -45px;
   }
 
   .card__delete-button {
     margin-bottom: 575px;
     margin-left: 250px;
+  }
+
+  .modal__caption {
+    font-size: 16px;
+    line-height: 19.2px;
   }
 }
