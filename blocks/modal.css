@@ -146,8 +146,20 @@
   padding: 16px 12px;
   border-radius: 8px;
   border-color: #212121;
-  border: 2px solid;
+  border: 1px solid;
   opacity: 70%;
+}
+
+.modal__input:hover {
+  border: 2px solid black;
+}
+
+.modal__input_type_error {
+  border: 1px solid #ff000099;
+}
+
+.modal__input_type_error:hover {
+  border: 2px solid red;
 }
 
 .modal__submit-button {
@@ -167,6 +179,19 @@
 .modal__submit-button:hover {
   cursor: pointer;
   background: rgba(0, 0, 0, 0.8);
+}
+
+.modal__button_disabled {
+  background-color: grey;
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.modal__error {
+  color: #ff0000b2;
+  font-size: 16px;
+  line-height: 17.6px;
+  font-weight: 500;
 }
 
 @media screen and (max-width: 627px) {
