@@ -1,3 +1,26 @@
+import "./index.css";
+import {
+  enableValidation,
+  settings,
+  resetValidation,
+} from "../scripts/validation.js";
+
+import logoSrc from "../images/logo.svg";
+
+const logoElement = document.getElementById("logo");
+logoElement.src = logoSrc;
+
+import avatarSrc from "../images/avatar.jpg";
+
+const avatarElement = document.getElementById("avatar");
+avatarElement.src = avatarSrc;
+
+import pencilIcon from "../images/pencil.svg";
+import plusIcon from "../images/plus.svg";
+
+document.getElementById("pencil-icon").src = pencilIcon;
+document.getElementById("plus-icon").src = plusIcon;
+
 const initialCards = [
   {
     name: "Val Thorens",
@@ -123,6 +146,12 @@ function handleAddCardSubmit(evt) {
   evt.target.reset();
 }
 
+// const resetValidation = (formEl, inputList, config) => {
+//   inputList.forEach((input) => {
+//     hideInputError(formEl, input, config);
+//   });
+// };
+
 profileEditButton.addEventListener("click", () => {
   editModalDescriptionInput.value = profileDescription.textContent;
   editModalNameInput.value = profileName.textContent;
@@ -176,3 +205,5 @@ initialCards.forEach((card) => {
   const cardElement = getCardElement(card);
   cardsList.prepend(cardElement);
 });
+
+enableValidation(settings);
