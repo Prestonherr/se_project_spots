@@ -266,7 +266,7 @@
   .modal__submit-button {
     width: 100%;
     line-height: 12.7px;
-    max-width: 156px;
+    max-width: 627px;
   }
 
   .modal__image {
@@ -287,5 +287,16 @@
   .modal__caption {
     font-size: 16px;
     line-height: 19.2px;
+  }
+
+  #delete-modal .modal__submit-button {
+    max-width: 156px;
+  }
+
+  #delete-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
   }
 }
