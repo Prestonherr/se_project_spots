@@ -22,7 +22,6 @@ const hideInputError = (formEl, inputEl, config) => {
 };
 
 const checkInputValidity = (formEl, inputEl, config) => {
-  console.log(inputEl.validationMessage);
   if (!inputEl.validity.valid) {
     showInputError(formEl, inputEl, inputEl.validationMessage, config);
   } else {
@@ -76,5 +75,3 @@ export const enableValidation = (config) => {
     setEventListeners(formEl, config);
   });
 };
-
-enableValidation(settings);

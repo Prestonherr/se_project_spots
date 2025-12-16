@@ -1,19 +1,22 @@
-## Project 3: Spots
+# Spots 📸
 
-## Project description
+An interactive photo-sharing web application where users can share photos, like posts, and manage their profile. Built with JavaScript and modern web technologies.
 
-Create an interactive social media web application where users can add and remove photos, like photos of other users, and make a few minor adjustments to their profile.
+## 🌐 Deployment
 
-## Technologies and techniques
+**[Spots](https://prestonherr.github.io/se_project_spots/)**
 
-In this project we learned how to use and implement grid layouts, media queries for responsive design, and handle text overflow while simultaneously learning how to navigate Figma.
+## 🛠️ Technologies
 
-## Deployment
+- JavaScript
+- HTML
+- CSS
+- Webpack
+- Babel
 
-This webpage is deployed to GITHub Pages.
+## 👤 Author
 
--[Deployment link](https://prestonherr.github.io/se_project_spots/)
+**Preston Herr**
 
-## Video Requirement
-
--[Video Requirement Link](https://drive.google.com/file/d/147fOeAUx7nAy16qq4XYZQO9rozlE8g7p/view?usp=sharing)
+- GitHub: [@Prestonherr](https://github.com/Prestonherr)
+- Project Repository: [se_project_spots](https://github.com/Prestonherr/se_project_spots)
